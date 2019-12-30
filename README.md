@@ -6,6 +6,9 @@ Gear changes are semi-latched, to prevent your sim race car from popping out of 
 Shifty is licensed under GPL v3.
 
 ## Configuration
+This firmware was prepared for the Arduino Pro Micro, but should function on any Arduino hardware that supports the Joystick library. Uno's only have 6 analog readable pins, since we want to use 8 analog channels, they aren't a great alternative.
+
+
 ```
            USB
       -------------
@@ -41,3 +44,7 @@ Top row: +5v (yellow wire)
 2nd row: G (white wire)
 3rd row (cut in middle trace): outer sensor output (red)
 4th row (cut in middle trace): inner sensor output (red)
+
+## Installation
+
+Use the Arduino IDE to compile and load Shifty.ino on to your board. The device will now function as a plug-n-play USB joystick device.
