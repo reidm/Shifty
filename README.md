@@ -1,7 +1,7 @@
 # Shifty: The Ultimate Shifter Firmware!
 Arduino firmware for race shifters. Supports 8 linear hall sensors, these allow for greater shifting accuracy than microswitch or magnetic switch alternatives.
 
-Gear changes are semi-latched, to prevent your sim race car from popping out of gear. This is aimed greatly to reduce mid-race driver sadness.
+Gear changes are semi-latched, to prevent your sim race car from popping out of gear. This is aimed to reduce mid-race driver sadness.
 
 Shifty is licensed under GPL v3.
 
