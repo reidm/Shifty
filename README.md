@@ -27,7 +27,7 @@ Shifty is licensed under GPL v3.
 ## Sensors
 Any old linear hall effect sensor rated at 5v should do. I'm using the [49E sensor](https://sensing.honeywell.com/index.php?ci_id=50359). Here is a no nonsense introduction to [wiring up the 49e with an Arduino](https://knitsbits.wordpress.com/2015/04/26/49e-sensor-and-arduino/), care of zlickovski.
 
-#### Sensor Pin Out (Text Facing Fordwards)
+#### Sensor Pin Out (Text Facing Forwards)
 ```
  1    2    3
 VCC   G    Out
