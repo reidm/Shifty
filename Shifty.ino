@@ -25,8 +25,8 @@ Joystick_ Joystick;
 #define SENSOR_COUNT 8
 #define NO_BUTTON -1
 
-const int reading_threshold = 90;
-const int stale_count_threshold = 85;
+const int read_threshold = 50; //Inverse of button sensitivity. Lower numbers means more sensitivity (i.e. easier to trigger buttons).
+const int stale_count_threshold = 140; //Time a button will be 'held' even when the sensor is below the read_threshold
 const int sensor_pin[SENSOR_COUNT] = {A3, A1, A0, A2, A9, A7, A8, A6};
 const int button_map[SENSOR_COUNT] = {0, 2, 4, 10, 1, 3, 5, 7};
 
@@ -57,7 +57,7 @@ void loop() {
         sensor_minimum[sensor_num] = value;
       value -= sensor_minimum[sensor_num];
 
-      if(value > reading_threshold){
+      if(value > read_threshold){
         flag = 1;
         stale_count = 0;
         if(button_active != NO_BUTTON && button_active != sensor_num){
@@ -73,7 +73,7 @@ void loop() {
         Serial.print(" / ");
       } else{
         Serial.println("");
-        delay(10);
+        delay(30);
       }
       #endif
   }
