@@ -47,4 +47,16 @@ Top row: +5v (yellow wire)
 
 ## Installation
 
+Follow instructions to install ArduinoJoystickLibrary into Arduino IDE: https://github.com/MHeironimus/ArduinoJoystickLibrary
+
 Use the Arduino IDE to compile and load Shifty.ino on to your board. The device will now function as a plug-n-play USB joystick device.
+
+### Device Name
+
+The USB device name can be changed by modifying Arduino IDE's boards.txt file. I suggest the following values:
+
+```
+micro.build.vid=0x9991
+micro.build.pid=0x9992
+micro.build.usb_product="Shifty"
+```
