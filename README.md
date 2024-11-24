@@ -16,14 +16,14 @@ This firmware was prepared for the Arduino Pro Micro, but should function on any
       | RXI   GND | G
     G | GND   RST |
       | GND   VCC | VCC
-      |  2    A3  |
+      |  2    A3  | In
       |  3    A2  | In
    In |  4    A1  | In
       |  5    A0  | In  
    In |  6    15  |
       |  7    14  |
    In |  8    16  |
-   In |  9    10  | In
+   In |  9    10  | 
       -------------
 ```
 
