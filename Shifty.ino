@@ -20,7 +20,7 @@
 //#define DEBUG 1
 
 #include <Joystick.h>
-Joystick_ Joystick;
+Joystick_ Joystick =   Joystick_(0x09, JOYSTICK_TYPE_GAMEPAD, 8, 0, false, false, false,  false,  false, false, false, false, false, false, false);
 
 #define SENSOR_COUNT 8
 #define NO_BUTTON -1
